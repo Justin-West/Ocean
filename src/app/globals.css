@@ -3,12 +3,79 @@
 @tailwind utilities;
 
 * {
+  --wave-amp: 10px;
+  --wave-period: 100px;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+section {
+  width: 60vw;
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  min-height: 10rem;
+}
+
+.wave {
+  width: calc(100vw + var(--wave-amp) + var(--wave-amp));
+  border-radius: var(--wave-amp);
+  left: calc(-1 * var(--wave-amp));
+  isolation: isolate;
+}
+
+.wave-wrapper {
+  margin: auto;
+  width: 60rem;
+  padding-inline: 120px;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 150%;
+  height: calc(2 * var(--wave-amp));
+
+  background-color: white;
+  mask-image: url("wave.svg");
+  mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
+  mask-repeat: repeat-x;
+  top: 0;
+
+  animation: 6s ease infinite forwards waveflow;
+}
+
+@keyframes waveflow {
+  from {
+    mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
+
+    transform: translate(calc(-2 * var(--wave-period)));
+  }
+
+  50% {
+    mask-size: calc(0.95 * var(--wave-period)) calc(2 * var(--wave-amp) * 5);
+  }
+
+  100% {
+    mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
+    transform: translate(calc(-1 * var(--wave-period)));
+  }
+}
+@keyframes waveflow-y {
+  from {
+  }
+
+  100% {
+  }
 }
