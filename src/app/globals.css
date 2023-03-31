@@ -26,17 +26,19 @@ section {
   padding: 40px;
 }
 
+.wrapper {
+  max-width: 60rem;
+}
+
 .wave {
   width: calc(100vw + var(--wave-amp) + var(--wave-amp));
-  border-radius: var(--wave-amp);
-  left: calc(-1 * var(--wave-amp));
+  left: calc(-0.5 * var(--wave-amp));
   isolation: isolate;
 }
 
 .wave-wrapper {
   margin: auto;
-  width: 60rem;
-  padding-inline: 120px;
+  max-width: 50rem;
 }
 
 .wave::before {
@@ -73,7 +75,7 @@ section {
   height: calc(3 * var(--wave-amp));
   animation: none;
   mask-size: calc(8 * var(--wave-period)) calc(var(--wave-amp) * 12);
-  transform: translate(calc(-4 * var(--wave-period)));
+  transform: translate(calc(-2.25 * var(--wave-period)));
 }
 
 @keyframes waveflow {

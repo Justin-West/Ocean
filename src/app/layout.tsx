@@ -35,6 +35,7 @@ export default function RootLayout({
             </button>
             <Link
               href="https://en.wikipedia.org/wiki/Ocean"
+              target="_blank"
               className="nav-link"
             >
               <div>About</div>
