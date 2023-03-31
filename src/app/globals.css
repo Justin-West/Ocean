@@ -48,10 +48,9 @@ section {
 
   background-color: white;
   mask-image: url("wave.svg");
-  mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
   mask-repeat: repeat-x;
-  top: 0;
-
+  top: -0.3px;
+  --ampmult: 4;
   animation: 6s ease infinite forwards waveflow;
 }
 
@@ -64,7 +63,7 @@ section {
 }
 
 .waveBig::before {
-  height: calc(12 * var(--wave-amp));
+  height: calc(4 * var(--wave-amp));
 
   mask-size: calc(var(--wave-period) * 1.25) calc(var(--wave-amp) * 6);
   animation: 6s ease infinite forwards waveflowBig;
@@ -79,17 +78,18 @@ section {
 
 @keyframes waveflow {
   from {
-    mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
+    mask-size: var(--wave-period) calc(var(--wave-amp) * var(--ampmult));
 
     transform: translate(calc(-2 * var(--wave-period)));
   }
 
   50% {
-    mask-size: calc(0.95 * var(--wave-period)) calc(2 * var(--wave-amp) * 5);
+    mask-size: calc(0.95 * var(--wave-period))
+      calc(2 * var(--wave-amp) * var(--ampmult));
   }
 
   100% {
-    mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
+    mask-size: var(--wave-period) calc(var(--wave-amp) * var(--ampmult));
     transform: translate(calc(-1 * var(--wave-period)));
   }
 }
