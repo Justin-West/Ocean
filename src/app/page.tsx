@@ -15,7 +15,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="wave bg-blue-600 text-blue-100">
+      <section className="wave bg-blue-500 text-white">
         <div className="wave-wrapper">
           <h2 className="font-bold text-lg">Section 2</h2>
           <p className="p-20 py-10">
@@ -25,9 +25,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section>
-        <div className="wrapper">
-          <h2 className="font-bold text-lg">Section 3</h2>
+      <section className="wave wave500 waveBig bg-blue-700 text-white">
+        <div className="wave-wrapper">
+          <h2 className="font-bold text-lg">Section 2</h2>
           <p className="p-20 py-10">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
             exercitationem adipisci repudiandae ab blanditiis. Repudiandae odit
@@ -35,24 +35,14 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section>
-        <div className="wrapper">
-          <h2 className="font-bold text-lg">Section 3</h2>
-          <p className="p-20 py-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-            exercitationem adipisci repudiandae ab blanditiis. Repudiandae odit
-            neque recusandae est reiciendis hic ducimus minima tenetur!
+      <section className="wave wave700 waveStatic pt-12 bg-white text-black">
+        <div className="wave-wrapper">
+          <p className="pl-20 py-8 inline">
+            All rights reserved 2023. Created by Justin West:
           </p>
-        </div>
-      </section>
-      <section>
-        <div className="wrapper">
-          <h2 className="font-bold text-lg">Section 3</h2>
-          <p className="p-20 py-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-            exercitationem adipisci repudiandae ab blanditiis. Repudiandae odit
-            neque recusandae est reiciendis hic ducimus minima tenetur!
-          </p>
+          <a className="pl-2" href="">
+            About Me
+          </a>
         </div>
       </section>
     </main>

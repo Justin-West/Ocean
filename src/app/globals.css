@@ -24,7 +24,6 @@ section {
   position: relative;
   margin: auto;
   padding: 40px;
-  min-height: 10rem;
 }
 
 .wave {
@@ -56,6 +55,28 @@ section {
   animation: 6s ease infinite forwards waveflow;
 }
 
+.wave700::before {
+  background-color: #1d4ed8;
+}
+
+.wave500::before {
+  background-color: #3b82f6;
+}
+
+.waveBig::before {
+  height: calc(12 * var(--wave-amp));
+
+  mask-size: calc(var(--wave-period) * 1.25) calc(var(--wave-amp) * 6);
+  animation: 6s ease infinite forwards waveflowBig;
+}
+
+.waveStatic::before {
+  height: calc(3 * var(--wave-amp));
+  animation: none;
+  mask-size: calc(8 * var(--wave-period)) calc(var(--wave-amp) * 12);
+  transform: translate(calc(-4 * var(--wave-period)));
+}
+
 @keyframes waveflow {
   from {
     mask-size: var(--wave-period) calc(var(--wave-amp) * 5);
@@ -72,11 +93,21 @@ section {
     transform: translate(calc(-1 * var(--wave-period)));
   }
 }
-@keyframes waveflow-y {
+
+@keyframes waveflowBig {
   from {
+    mask-size: calc(var(--wave-period) * 1.25) calc(var(--wave-amp) * 8);
+
+    transform: translate(calc(-1 * var(--wave-period) * 1.25));
+  }
+
+  50% {
+    mask-size: calc(1.5 * var(--wave-period)) calc(2 * var(--wave-amp) * 8);
   }
 
   100% {
+    mask-size: calc(var(--wave-period) * 1.25) calc(var(--wave-amp) * 8);
+    transform: translate(calc(-2 * var(--wave-period) * 1.25));
   }
 }
 
