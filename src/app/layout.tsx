@@ -31,7 +31,7 @@ export default function RootLayout({
               <div>Waveform</div>
             </button>
             <button className="nav-link">
-              <div>Contact</div>
+              <div>Connect</div>
             </button>
             <Link
               href="https://en.wikipedia.org/wiki/Ocean"

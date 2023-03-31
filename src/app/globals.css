@@ -89,7 +89,7 @@ section {
   transform: scale(0);
   position: absolute;
   content: "";
-  background-color: blue;
+  background-color: #1c64f2;
   top: 30%;
   right: -20px;
   width: 10px;
