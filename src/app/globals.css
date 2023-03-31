@@ -26,10 +26,6 @@ section {
   padding: 40px;
 }
 
-.wrapper {
-  max-width: 60rem;
-}
-
 .wave {
   width: calc(100vw + var(--wave-amp) + var(--wave-amp));
   left: calc(-0.5 * var(--wave-amp));
