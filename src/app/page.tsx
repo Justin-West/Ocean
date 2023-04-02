@@ -9,7 +9,13 @@ export default function Home() {
       <section className="wave">
         <div className="wave-wrapper">
           <h2 className="font-bold text-lg">Welcome to the Home Page!</h2>
-          <Image src={""} alt="" />
+          <Image
+            src="https://picsum.photos/id/154/800/500"
+            width={500}
+            height={300}
+            alt=""
+            className="rounded-2xl m-auto mt-10 outline"
+          />
           <p className="p-20 py-10">
             The ocean is just a thing... Nothing crazy just like the bigest
             thing in the world!
