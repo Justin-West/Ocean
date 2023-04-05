@@ -14,7 +14,7 @@ export default function Home() {
             width={500}
             height={300}
             alt=""
-            className="rounded-2xl m-auto mt-10 outline"
+            className="rounded-xl m-auto mt-10 outline outline-2 outline-white outline-offset-[-20px]"
           />
           <p className="p-20 py-10">
             The ocean is just a thing... Nothing crazy just like the bigest
@@ -24,21 +24,18 @@ export default function Home() {
       </section>
       <section className="wave bg-blue-500 text-white">
         <div className="wave-wrapper">
-          <h2 className="font-bold text-lg">Section 2</h2>
           <p className="p-20 py-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-            exercitationem adipisci repudiandae ab blanditiis. Repudiandae odit
-            neque recusandae est reiciendis hic ducimus minima tenetur!
+            Some say its just H<sub>2</sub>O but some say its actually just salt
+            or something...
           </p>
         </div>
       </section>
       <section className="wave wave500 waveBig bg-blue-700 text-white">
         <div className="wave-wrapper">
-          <h2 className="font-bold text-lg">Section 2</h2>
-          <p className="p-20 py-10">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-            exercitationem adipisci repudiandae ab blanditiis. Repudiandae odit
-            neque recusandae est reiciendis hic ducimus minima tenetur!
+          <h2 className="font-bold text-lg">Lore:</h2>
+          <p className="p-20 py-5">
+            In the begining there was just water. Then God thought that was
+            kinda lame and made some other stuff...
           </p>
         </div>
       </section>
