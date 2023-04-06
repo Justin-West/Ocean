@@ -17,7 +17,7 @@ export default function Waveform() {
               <label htmlFor="" className=" text-white">
                 Name:
               </label>
-              <input className=" ml-4 rounded-md" type="text" />
+              <input className=" ml-4 rounded-md" type="text" required />
             </div>
 
             <div className=" bg-black/10 p-2 rounded-lg">
@@ -26,9 +26,20 @@ export default function Waveform() {
               </label>
               <input className=" ml-4 rounded-md" type="text" />
             </div>
-            <button className=" bg-black text-lg font-black px-2 rounded-md col-span-2 mx-auto w-max text-blue-500">
-              Submit
-            </button>
+            <div className=" bg-black/10 p-2 rounded-lg">
+              <label htmlFor="" className=" text-white">
+                Color of your Ocean:
+              </label>
+              <input
+                className=" ml-4 rounded-full bg-blue-500 p-1"
+                type="color"
+                name=""
+                id=""
+              />
+            </div>
+            <div className=" bg-black text-lg font-black px-2 rounded-md col-span-2 mx-auto w-max text-blue-500">
+              <input type="submit" value="Submit"></input>
+            </div>
           </form>
         </div>
       </section>

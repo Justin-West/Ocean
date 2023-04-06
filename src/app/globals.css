@@ -142,3 +142,11 @@ section {
     transform: rotate(-5deg);
   }
 }
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 10000px;
+  border: none;
+}
