@@ -23,7 +23,10 @@ export default function RootLayout({
             "isolate z-10 w-full p-4 top-0 fixed backdrop-blur-md backdrop-brightness-110 bg-white/50"
           }
         >
-          <Link href="" className="font-extralight inline text-4xl">
+          <Link
+            href="https://justin-west.github.io/Ocean/"
+            className="font-extralight inline text-4xl"
+          >
             Ocean.
           </Link>
           <div className="ml-10 inline-flex flex-wrap gap-10 pt-4">
