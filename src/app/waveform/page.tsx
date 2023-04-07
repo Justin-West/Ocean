@@ -13,44 +13,44 @@ export default function Waveform() {
         <div className="wave-wrapper">
           <p className=" py-4">Enter this form to make a wave!</p>
           <form className=" text-black grid grid-cols-2 gap-2" action="">
-            <div className="relative bg-black/10 p-2 rounded-lg">
+            <div className="relative bg-black/10 p-2 rounded-lg flex flex-wrap gap-2">
               <label htmlFor="" className=" text-white">
-                Name:
+                Your Name:
               </label>
               <input
-                className="absolute ml-auto rounded-md right-2"
+                className=" rounded-md flex-grow w-1/2 h-[24px]"
                 type="text"
                 required
               />
             </div>
 
-            <div className="relative bg-black/10 p-2 rounded-lg">
+            <div className="relative bg-black/10 p-2 rounded-lg flex flex-wrap gap-2">
               <label htmlFor="" className=" text-white">
                 Name your Ocean:
               </label>
               <input
-                className=" absolute ml-auto rounded-md right-2"
+                className=" ml-auto rounded-md right-2 flex-grow w-1/2"
                 type="text"
                 required
               />
             </div>
-            <div className="relative bg-black/10 p-2 rounded-lg">
+            <div className="relative bg-black/10 p-2 rounded-lg flex flex-wrap gap-2">
               <label htmlFor="" className=" text-white">
-                Color of your Ocean:
+                Color your Ocean:
               </label>
               <input
-                className="absolute ml-auto h-[24px] rounded-full w-[180px] right-2"
+                className="flex-grow ml-auto h-[24px] rounded-full right-2"
                 type="color"
                 name=""
                 id=""
               />
             </div>
-            <div className="relative bg-black/10 p-2 rounded-lg">
+            <div className="relative bg-black/10 p-2 rounded-lg flex flex-wrap gap-2">
               <label htmlFor="" className=" text-white">
                 Saltiness:
               </label>
               <input
-                className=" brightness-75 contrast-200 saturate-0 absolute ml-auto rounded-md right-2 h-[24px] w-[180px]"
+                className=" flex-grow brightness-75 contrast-200 saturate-0 rounded-md right-2 w-1/2 h-[24px]"
                 type="range"
               />
             </div>
