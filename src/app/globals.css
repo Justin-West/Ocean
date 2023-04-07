@@ -134,6 +134,10 @@ section {
   transform: scale(1);
 }
 
+.bounce:hover {
+  animation: 300ms ease-out forwards bounce;
+}
+
 @keyframes bounce {
   40% {
     transform: rotate(5deg);
@@ -149,4 +153,6 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
   border-radius: 10000px;
   border: none;
+  padding: 0;
+  margin: 0;
 }
